@@ -28,3 +28,47 @@ Además, se ha comprobado que ciertos hongos pueden degradar completamente el po
 
 
 Otros materiales:
+
+
+
+
+
+
+
+
+Lista de control de pruebas:
+
+Bot:
+1. Ver que funcione correctamente al llamar sus comandos, que tenga respuestas rápidas (buen rendimiento), que sea seguro en la información de datos y que no cause spam.
+2. - Funcionalidad: el bot será informativo (tendrá respuestas guardadas y garantizará que se le de respuesta a la pregunta seleccionada del usuario).
+   - Interfaz: el usuario podrá interactuar directamente con comandos mostrados por el bot al ser iniciado. Al escribir el comando, el bot dará respuesta escrita y en voz alta.
+     Además de eso, el bot tendrá un tono educativo e informativo, sin embargo, será para la comprensión de todo usuario (información clara y con vocabulario adecuado).
+   - Seguridad: proteger los comandos de administrador (que los usuarios no puedan usar esto, pues podrían desconfigurar el bot), y proteger el token.
+3. Se espera que el bot muestre una introducción a su propósito y conocimiento; muestre un breve contexto de su existencia y una lista sobre los comandos para hacer las preguntas predeterminadas
+   por el sistema. Se espera que el bot de respuestas rápidas (pues las respuestas estarán guardadas).
+4. Tareas para cada categoría:
+   - Funcionalidad:
+     Probar que el comando /inicio muestra la introducción del bot con su propósito.
+     Verificar que el comando /comandos muestra correctamente la lista de comandos disponibles.
+     Comprobar que al escribir una pregunta predeterminada, el bot responde con el mensaje adecuado.
+     Revisar que el bot responde también en formato de voz (si se implementa la función de texto a voz).
+     Validar que el bot no se cae si recibe una pregunta no reconocida.
+   - Interfaz:
+     Asegurarse de que los mensajes tienen formato claro (títulos, emojis, negrilla si aplica).
+     Confirmar que la información es comprensible para cualquier usuario, con vocabulario claro.
+     Comprobar que los comandos se muestran automáticamente al iniciar el bot.
+     Verificar que las respuestas del bot se den en menos de 2 segundos.
+     Comprobar que el bot sigue funcionando bien después de varios comandos seguidos.
+     Probar el funcionamiento del bot en distintos canales sin errores.
+     Simular el uso de múltiples usuarios al mismo tiempo y verificar que el bot no se sature.
+   - Seguridad:
+     Asegurar que solo los administradores puedan usar comandos de configuración.
+     Comprobar que el token del bot esté protegido y no esté visible en el código o en los mensajes de error.
+     Evitar que el bot muestre errores internos directamente al usuario.
+     Limitar la cantidad de veces que se pueden usar los comandos para evitar spam (usar cooldowns).
+     Verificar que el bot no responda a mensajes privados (DMs), solo en canales permitidos.
+     
+
+
+   
+     
